@@ -23,6 +23,7 @@ header nav ul {
     display: flex;
     justify-content: center;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -41,10 +42,10 @@ header nav ul li a:hover {
 }
 
 main {
-    padding: 0px;
-    max-width: 0 auto;
+    padding: 20px;
+    max-width: 960px;
     margin: 0 auto;
-    background: #f4f4f9; /* Matches the body's background color */
+    background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
 }
@@ -82,6 +83,7 @@ footer ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer ul li {
@@ -112,4 +114,52 @@ footer ul li a:hover {
 
 .download-link:hover {
     background-color: #d35400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .download-link {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .download-link {
+        font-size: 0.8em;
+        padding: 7px 12px;
+    }
 }
