@@ -66,6 +66,14 @@ ul li {
     margin-bottom: 15px;
 }
 
+.profile-photo {
+    display: block;
+    max-width: 150px; /* Constrains width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes it circular */
+    margin: 20px auto;
+}
+
 footer {
     background-color: #222;
     color: #fff;
