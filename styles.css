@@ -66,7 +66,7 @@ ul li {
     margin-bottom: 15px;
 }
 
-.profile-photo {
+.profile-pic {
     display: block;
     max-width: 150px; /* Constrains width */
     height: auto; /* Maintains aspect ratio */
