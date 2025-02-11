@@ -8,6 +8,28 @@
 </head>
 <body>
     <header>
+        <script>
+          document.addEventListener('click', function (event) {
+            const clickTarget = event.target.tagName + (event.target.id ? `#${event.target.id}` : '');
+            const userId = 'anonymous'; // Replace with a unique user ID if available
+            const pageUrl = window.location.href;
+            const timestamp = new Date().toISOString();
+
+            // Send the data to the Cloud Function
+            fetch('https://us-east1-github-io-tracking.cloudfunctions.net/track-interactions-python', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                userId,
+                pageUrl,
+                clickTarget,
+                timestamp,
+              }),
+            }).catch((error) => console.error('Error tracking interaction:', error));
+          });
+        </script>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">About</a></li>
