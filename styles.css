@@ -68,9 +68,9 @@ ul li {
 
 .profile-pic {
     display: block;
-    max-width: 150px; /* Constrains width */
+    max-width: 250px; /* Constrains width */
     height: auto; /* Maintains aspect ratio */
-    border-radius: 50%; /* Makes it circular */
+    border-radius: 50%; /* Makes it circulprofile-picar */
     margin: 20px auto;
 }
 

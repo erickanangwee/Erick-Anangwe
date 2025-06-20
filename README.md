@@ -5,3 +5,4 @@ I should change the publications page to **projects** page and add my projects
 * The dates module *project*
 I should update the *project* READMEs to be self explanatory
 I am adding a contact me button for people to reach out to me
+Write a proper README for the project
