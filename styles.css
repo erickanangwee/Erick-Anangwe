@@ -58,12 +58,13 @@ h1 {
 }
 
 ul {
-    list-style: ;
+    list-style: none;
     padding: 0;
 }
 
 ul li {
     margin-bottom: 15px;
+    list-style: circle;
 }
 
 .profile-pic {
